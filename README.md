@@ -9,7 +9,7 @@ The tag offers similar tracking to Google Analytics and other web analytics tool
 ## How to configure the Datm web analytics tag
 
 - Enter the server domain for you reporting endpoint.  This can be a GTM server-side container domain or other location.  Do not include the protocol (`http://` or `https://`); the tag automatically sends all requests via HTTPS.
-- Enter the path for the endpoint.  For GTM server containers, this is typically used by the client to claim the request.  By default this is set to `web-pixel/`.
+- Enter the path for the endpoint.  For GTM server containers, this is typically used by the client to claim the request.  By default this is set to `/web-pixel/`.
 - Enter an optional 'tag' value.  This can help identify the organization or web container that is sending the request.
 - Select whether or not cookies should be used.  If selected, two cookies are set to track anonymous session and user identifiers: `datm_session` and `datm_client`.
 - Enter any default tag configuration parameters that you would like to override; such as the Session ID, Client ID, or cookie domain.
