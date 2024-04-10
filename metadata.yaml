@@ -14,5 +14,5 @@
 
 homepage: 'https://www.2point1analytics.com/'
 versions:
-  - sha: 8e78a97cc999b99b632213673395643e2d72b1e9
+  - sha: 2cb6f7a8e33428cc5def2147d6e027ce18a90df1
     changeNotes: Initial release.
