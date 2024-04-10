@@ -14,5 +14,7 @@
 
 homepage: 'https://www.2point1analytics.com/'
 versions:
+  - sha: 0252df8694eb081eb21d29eb6da0f1db7a6135ca
+    changeNotes: Added input field to customize the script domain. Removed tag test.
   - sha: 2cb6f7a8e33428cc5def2147d6e027ce18a90df1
     changeNotes: Initial release.
