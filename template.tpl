@@ -2,8 +2,8 @@ ___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
-https://developers.google.com/tag-platform/tag-manager/templates/gallery-tos
-(or such other URL as Google may provide), as modified from time to time.
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+Google may provide), as modified from time to time.
 
 
 ___INFO___
@@ -14,7 +14,11 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Datm Web Analytics Tag",
-  "categories": ["ANALYTICS", "CONVERSIONS", "DATA_WAREHOUSING"],
+  "categories": [
+    "ANALYTICS",
+    "CONVERSIONS",
+    "DATA_WAREHOUSING"
+  ],
   "brand": {
     "id": "brand_dummy",
     "displayName": "Datm",
@@ -39,23 +43,25 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "TEXT",
         "name": "serverDomain",
-        "displayName": "Server URL",
+        "displayName": "Server Domain",
         "simpleValueType": true,
-        "defaultValue": "capi.datm.cc"
+        "help": "(Required) Domain of your reporting endpoint.  Do not include the protocol (https://)",
+        "valueHint": "capi.example.com"
       },
       {
         "type": "TEXT",
         "name": "serverPath",
         "displayName": "Server Path",
         "simpleValueType": true,
-        "defaultValue": "/web-pixel/"
+        "defaultValue": "/web-pixel/",
+        "help": "(Required) The path for your reporting endpoint."
       },
       {
         "type": "TEXT",
         "name": "tag",
         "displayName": "Tag",
         "simpleValueType": true,
-        "help": "Site or company name"
+        "help": "(Recommended) Site or company name used to identify the source of the data."
       },
       {
         "type": "CHECKBOX",
@@ -115,7 +121,8 @@ ___TEMPLATE_PARAMETERS___
           }
         ]
       }
-    ]
+    ],
+    "help": "(Optional) Use these fields to override any default values that are automatically tracked"
   },
   {
     "type": "GROUP",
@@ -300,7 +307,8 @@ ___TEMPLATE_PARAMETERS___
         "displayName": "Referrer Path",
         "simpleValueType": true
       }
-    ]
+    ],
+    "help": "(Optional) Use these fields to override any default values that are automatically tracked"
   },
   {
     "type": "GROUP",
@@ -312,7 +320,8 @@ ___TEMPLATE_PARAMETERS___
         "type": "CHECKBOX",
         "name": "isLoggingEnabled",
         "checkboxText": "Enable Logging",
-        "simpleValueType": true
+        "simpleValueType": true,
+        "help": "Select to display debug notes in the browser console.  Only applicable when in preview mode."
       }
     ]
   }
@@ -796,4 +805,4 @@ scenarios:
 
 ___NOTES___
 
-Created on 4/10/2024
+Created on 4/10/2024, 18:14:02
