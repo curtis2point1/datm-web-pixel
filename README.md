@@ -19,6 +19,7 @@ The tag offers similar tracking to Google Analytics and other web analytics tool
 	- Items entered in the 'Custom Parameters' section are added to a nested object in the payload JSON called `custom`.
 - Enter any default event attributes that you want to override, such as event ID, name, and timestamp ...and page URL, path, etc.
 - Select if you want to view debug comments in the console (only applicable when in preview mode)
+- If you've configured a custom domain (other than 'datm.cc') then you'll need to configure the appropriate permissions within the tag template.
 
 ## Open Source
 
